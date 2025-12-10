@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aniketh Subramanian | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 8vw;
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #1f2937;
+      z-index: 10;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #9ca3af;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #e5e7eb;
+    }
+
+    nav a.active {
+      color: #facc15;
+    }
+
+    .hero {
+      padding: 5rem 8vw 3rem;
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero h2 {
+      font-weight: 400;
+      color: #9ca3af;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .pill {
+      border-radius: 999px;
+      padding: 0.25rem 0.9rem;
+      border: 1px solid #1f2937;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    section {
+      padding: 0 8vw 3rem;
+      max-width: 900px;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card {
+      border-radius: 0.9rem;
+      border: 1px solid #1f2937;
+      padding: 1.2rem 1.3rem;
+      background: #020617;
+      margin-bottom: 1rem;
+    }
+
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-bottom: 0.75rem;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid #1f2937;
+      color: #9ca3af;
+    }
+
+    .music-note {
+      font-size: 0.9rem;
+      color: #a5b4fc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0 3rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    a.inline-link {
+      color: #a5b4fc;
+      text-decoration: none;
+    }
+
+    a.inline-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 0.9rem 5vw;
+      }
+      .hero, section {
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
+      nav a {
+        margin-left: 0.8rem;
+        font-size: 0.85rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ani S</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="awards.html">Awards</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Hi, I'm Ani.</h1>
+      <h2>Mechanical engineering student interested in robotics, mechanical design, and building practical systems.</h2>
+
+      <div class="pill-row">
+        <div class="pill">Mechanical Engineering</div>
+        <div class="pill">Robotics</div>
+        <div class="pill">MMA</div>
+        <div class="pill">Pickleball</div>
+        <div class="pill">Music Production</div>
+      </div>
+
+      <p>
+        I like taking ideas from rough sketches to working prototypes. Recently I've been working on projects like 
+        an RC car, a clay extrusion system, and assistive tech for drivers with hearing impairments. Outside of engineering, 
+        I practice MMA, play pickleball, compete in bollywood dance, and make music.ok
+      </p>
+    </section>
+
+    <section>
+      <h3>Engineering Experience</h3>
+
+      <div class="card">
+        <div class="card-title">EcoCAR Mobility Challenge</div>
+        <div class="card-subtitle">Technical Project Member · Aug 2024 – Present</div>
+        <p>
+          Working on an assistive device that visualizes car horns for deaf and hard-of-hearing drivers. 
+          I focus on integrating custom microphone hardware with real-time signal processing and visualization.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Embedded systems</span>
+          <span class="tag">Signal processing</span>
+          <span class="tag">Prototyping</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">RC Car & Robotics Projects</div>
+        <div class="card-subtitle">Personal projects</div>
+        <p>
+          Designing and building small-scale vehicles and robotic systems: custom drivetrains, swerve drive, 
+          and sensor-driven control with Raspberry Pi and microcontrollers.
+        </p>
+        <div class="tag-row">
+          <span class="tag">CAD</span>
+          <span class="tag">3D printing</span>
+          <span class="tag">Controls</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Outside the Lab</h3>
+      <div class="card">
+        <p>
+          When I'm not debugging something, I'm probably sparring at the gym, on a pickleball court, or 
+          experimenting with new sounds in my DAW.
+        </p>
+        <p class="music-note">
+          🎧 I also make beats. One day this will play my own track while you browse.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ani S
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
